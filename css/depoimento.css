@@ -1,0 +1,18 @@
+.depoimento{
+  width: 25em;
+  font-size: 10px;
+}
+
+.depoimento-imagem{
+  border-radius: 50%;
+  width: 20em;
+  height: 20em;
+  display: block;
+  margin: 0 auto;
+}
+
+.depoimento-texto{
+  font-size: 1.5em;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}

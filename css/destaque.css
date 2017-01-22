@@ -1,0 +1,20 @@
+.destaque{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  padding-bottom: 2em;
+  padding-top: 2em;
+  font-size: 1.2em;
+  font-family: 'Roboto', sans-serif;
+}
+
+.destaque-principal{
+  width: 35em;
+}
+
+.destaque-titulo{
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
