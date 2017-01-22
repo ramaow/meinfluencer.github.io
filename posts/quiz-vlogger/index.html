@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8">
+    <title>Me.Influencer</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/postList.css">
+    <link rel="stylesheet" href="/css/cabecalhoPrincipal.css">
+    <link rel="stylesheet" href="/css/container.css">
+    <link rel="stylesheet" href="/css/depoimento.css">
+    <link rel="stylesheet" href="/css/destaque.css">
+    <link rel="stylesheet" href="/css/principal.css">
+    <link rel="stylesheet" href="/css/post.css">
+    <script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyBbt5TX5AuhumcKhjHRsHSyKOYxI5sWgX0",
+        authDomain: "meinformer-598a3.firebaseapp.com",
+        databaseURL: "https://meinformer-598a3.firebaseio.com",
+        storageBucket: "meinformer-598a3.appspot.com",
+        messagingSenderId: "659634858251"
+    };
+    firebase.initializeApp(config);
+    </script>
+</head>
+<body>
+    <header class="cabecalhoPrincipal">
+    <h1>
+      <a href = "/">
+      <img src="/img/Logo_Me-Influencer.png" alt="Me.Influencer">
+    </a>
+    </h1>
+      <form class="navbar-form navbar-left" id="busca" action="#">
+        <div class="form-group">
+          <input class="form-control" type="text">
+        </div>
+          <button class="btn btn-default" type="submit">Buscar</button>
+      </form>
+    </header>
+
+<main>
+
+<div class="principal">
+  <section class="post" >
+    <h1> Quiz: Qual tipo de Vlogger você é. </h1>
+    <p class="post-conteudo">
+      Descubra a sua vocação para começar com um vlog arrasador.
+
+      <div class="quizz-container" data-width="100%" data-height="auto" data-quiz="330234"></div>
+<script src="//dcc4iyjchzom0.cloudfront.net/widget/loader.js" async></script>
+
+    </p>
+  </section>
+
+  <!-- <nav class="sidePosts">
+    <ol>
+    <li>
+      <a href="#">
+          Post bacanudo 1
+      </a>
+    </li>
+    <li>
+      <a href="#">
+          Post bacanudo 2
+      </a>
+    </li>
+  </ol>
+  </nav> -->
+
+</div>
+
+<section class="destaque">
+  <div class="destaque-principal">
+    <h2 class="destaque-titulo" id="titulo">
+    As melhores dicas para você se tornar super influente na web!
+    </h2>
+    <p class="destaque-texto">
+    Baixe agora nossa lista de completa de conteúdos, assim você saberá como criar seu canal, gerar engajamento, como tornar seus vídeos mais profissionais e muito mais.
+    </p>
+    <!-- Form de contato que pega infos de leads -->
+    <form class="formContato" action="#">
+      <div class="form-group">
+        <label for="nome">Nome</label>
+        <input class="form-nome form-control" type="text" id="nome">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input class="form-email form-control" type="email" id="email">
+      </div>
+        <button class="btn btn-primary" type="submit">Eu quero!</button>
+        <p class="form-alertaSucesso" style="display:none">
+
+        </p>
+        <p class="form-alertaErro" style="display:none">
+
+        </p>
+    </form>
+  </div>
+
+    <figure class="depoimento">
+    <img class="depoimento-imagem" src="/img/recomen.png">
+    <figcaption class="depoimento-texto">
+        “O número de views dos meus vídeos aumentou muito depois que li as dicas do Me.Ifluencer” Melvin Quinn, 24 - São Paulo
+    </figcaption>
+    </figure>
+</section>
+
+</main>
+
+
+
+</body>
+</html>
