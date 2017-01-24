@@ -88,6 +88,20 @@ header .intro-text .skills {
 	font-size:1.25em;
 	font-weight:300
 }
+.form-alertaSucesso {
+	padding: 15px;
+    background: #16b125;
+    margin-top: 40px;
+    border-radius: 5px;
+    color: #fff;
+}
+.form-alertaErro {
+	padding: 15px;
+    background: #ea0c26;
+    margin-top: 40px;
+    border-radius: 5px;
+    color: #fff;
+}
 @media (min-width:768px) {
 	header .container {
 		padding-top:150px;
