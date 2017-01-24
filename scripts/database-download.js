@@ -58,7 +58,7 @@ $espacoAlertaSucesso.textContent = msg
                             .push(contatoComIP)
                             .then(function(){
                                 limpaFormContato($formContato)
-                                alertaSucesso($formContato, "Registrado com sucesso! Em breve você recebá um e-mail com os nossos materiais. Obrigado!")
+                                alertaSucesso($formContato, "Registrado com sucesso")
                             })
                             .catch(function(e){
                                 console.log(e)

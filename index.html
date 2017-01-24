@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <title>Se torne influente na web - Me.Influencer</title>
+    <link rel="icon" href="img/icon.png">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/postList.css">
@@ -31,7 +32,7 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style="display:none;">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand" href="index.html"><img src="img/Logo_Me-Influencer.png" alt="Me.Influencer"></a>
@@ -39,20 +40,17 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right" style="display:none;">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="page-scroll">
+                        <a href="index.html">Início</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#portfolio">Portfolio</a>
+                        <a href="sobre.html">Sobre Nós</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#about">About</a>
+                        <a href="contato.html">Contato</a>
                     </li>
-                    <li class="page-scroll">
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
+				 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -63,7 +61,7 @@
         <div class="container">
             <div class="row text-left-2">
             <div class="col-md-4">
-                    <h1 style="color:#a5bdc5; font-size:35px; margin-top:10px;">AS MELHORES DICAS PARA VOCÊ SE TORNAR SUPER INFLUENTE NA WEB!</h1>
+                    <h1 style="color:#a5bdc5; font-size:35px; margin-top:10px;">Quer um canal profissional com muitas curtidas e seguidores?</h1>
                 </div>
                 <div class="col-md-3">
                 <img src="img/fama.png">
@@ -172,6 +170,18 @@
             </div>
                 
             <div class="col-md-3 pull-right mt-artigo">
+            
+            <div class="portfolio-item" style="margin-bottom:40px;">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/cabin.jpg" class="img-responsive" alt="">
+                    </a>
+                </div>
+                
               	<div style="background:#eee; height:auto; width:100%; padding:15px; border:1px solid #ddd; border-radius:5px;">
                 <h4 class="text-center">Artigos populares</h4>
                 <hr>
@@ -198,9 +208,9 @@
                         <img src="img/footer-logo-me-influencer.jpg">
                     </div>
                     <div class="footer-col col-md-6 text-right-2">
-                    	<a style="margin-right:10px;" href="#"><img src="img/facebook.png"></a>
-                        <a style="margin-right:10px;" href="#"><img src="img/instagram.png"></a>
-                        <a href="#"><img src="img/pinterest.png"></a>
+                    	<a style="margin-right:10px;" href="https://www.facebook.com/me.influencer" target="new"><img src="img/facebook.png"></a>
+                        <a style="margin-right:10px;" href="https://www.instagram.com/me.influencer/" target="new"><img src="img/instagram.png"></a>
+                        <a href="https://br.pinterest.com/meinfluencer/" target="new"><img src="img/pinterest.png"></a>
                     </div>
                 </div>
             </div>
@@ -215,6 +225,45 @@
             </div>
         </div>
     </footer>
+    
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2" style="background:#0CF; padding:50px;">
+                        <div class="modal-body">
+                            <h2 style="color:#fff;">Promessa é dívida :)</h2>
+                            <h3 style="margin-top:60px;color:#fff;">Cadastre-se abaixo e baixe o guia definitivo para criar um home studio.</h3>
+                            <img src="img/book.png">
+                            
+                            <form class="formContato" action="#">
+          <div class="form-group" style="margin-top:10px;">
+          	<input class="form-nome form-control" type="text" id="nome" placeholder="Nome completo" required>
+          </div>
+          <div class="form-group" style="margin-top:10px;">
+            <input class="form-email form-control" type="email" id="email" placeholder="E-mail" required>
+          </div>
+            <button class="btn btn-primary" style="width:100%;" type="submit">Eu quero!</button>
+            <p class="form-alertaSucesso" style="display:none"></p>
+            <p class="form-alertaErro" style="display:none"></p>
+           
+             <div class="form-group" style="margin-top:25px; color:#fff;">
+          Respeitamos sua privacidade. Não mandaremos <b>SPAM</b>!
+          </div>
+        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
    
     <script src="scripts/database.js"></script>
 
