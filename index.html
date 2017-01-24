@@ -1,18 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-    <title>Me.Influencer</title>
+    <title>Se torne influente na web - Me.Influencer</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/postList.css">
-    <link rel="stylesheet" href="/css/cabecalhoPrincipal.css">
-    <link rel="stylesheet" href="/css/container.css">
-    <link rel="stylesheet" href="/css/depoimento.css">
-    <link rel="stylesheet" href="/css/destaque.css">
-    <link rel="stylesheet" href="/css/principal.css">
-    <link rel="stylesheet" href="/css/post.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/postList.css">
     <script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
 
     <script>
@@ -30,126 +24,198 @@
 
 
 </head>
-<body>
-    <header class="cabecalhoPrincipal">
-    <h1>
-      <a href = "/">
-      <img src="/img/Logo_Me-Influencer.png" alt="Me.Influencer">
-    </a>
-    </h1>
-      <form class="navbar-form navbar-left" id="busca" action="#">
-        <div class="form-group">
-          <input class="form-control" type="text">
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style="display:none;">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="img/Logo_Me-Influencer.png" alt="Me.Influencer"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right" style="display:none;">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-          <button class="btn btn-default" type="submit">Buscar</button>
-      </form>
-    </header>
-
-
-    <main>
-    <section class="destaque">
-      <div class="destaque-principal">
-        <h2 class="destaque-titulo">
-        As melhores dicas para você se tornar super influente na web!
-        </h2>
-        <p class="destaque-texto">
-        Baixe agora nossa lista de completa de conteúdos, assim você saberá como criar seu canal, gerar engajamento, como tornar seus vídeos mais profissionais e muito mais.
-        </p>
-
-        <!-- FIREBASE! -->
+        <!-- /.container-fluid -->
+    </nav>
+     
+     <section style="background: #3A464A;padding:150px 0 30px;">
+        <div class="container">
+            <div class="row text-left-2">
+            <div class="col-md-4">
+                    <h1 style="color:#a5bdc5; font-size:35px; margin-top:10px;">AS MELHORES DICAS PARA VOCÊ SE TORNAR SUPER INFLUENTE NA WEB!</h1>
+                </div>
+                <div class="col-md-3">
+                <img src="img/fama.png">
+                </div>
+                <div class="col-md-5" style="text-align:center;">
+                    <p style="color:#fff; font-size:18px;margin-top:10px;">Baixe agora nossa lista de completa de conteúdos, assim você saberá como criar seu canal, gerar engajamento, como tornar seus vídeos mais profissionais e muito mais <span style="color: #ffb500;">(é gratis)</span>!</p>
+                    <img src="img/seta.gif">
+                </div>
+            </div>    
+        </div>
+    </section>
+    
+    <section style="background: #465459 url(img/bg-form.png) repeat-x 0 0;
+    border-bottom: 4px solid #32a7de;padding:40px 0 20px;">
+        <div class="container">
+            <div class="row text-left-2">
+            <!-- FIREBASE! -->
         <!-- Form de contato que pega infos de leads -->
         <form class="formContato" action="#">
-          <div class="form-group">
-            <label for="nome">Nome</label>
-            <input class="form-nome form-control" type="text" id="nome">
+          <div class="form-group col-md-4" style="margin-top:15px; color:#a5bdc5;">
+          Respeitamos sua privacidade. Não mandaremos <b>SPAM</b>!
           </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input class="form-email form-control" type="email" id="email">
+          <div class="form-group col-md-3" style="margin-top:10px;">
+          	<input class="form-nome form-control" type="text" id="nome" placeholder="Nome completo" required>
           </div>
+          <div class="form-group col-md-3" style="margin-top:10px;">
+            <input class="form-email form-control" type="email" id="email" placeholder="E-mail" required>
+          </div>
+          <div class="col-md-2">
             <button class="btn btn-primary" type="submit">Eu quero!</button>
             <p class="form-alertaSucesso" style="display:none">
             </p>
             <p class="form-alertaErro" style="display:none">
             </p>
+            </div>
         </form>
-        <!-- FIREBASE! -->
 
-      </div>
-
-
-
-        <!-- <figure class="depoimento">
-        <img class="depoimento-imagem" src="/img/recomen.png">
-        <figcaption class="depoimento-texto">
-            “O número de views dos meus vídeos aumentou muito depois que li as dicas do Me.Ifluencer” Melvin Quinn, 24 - São Paulo
-        </figcaption>
-        </figure> -->
+            </div>    
+        </div>
     </section>
 
-    <div class="principal">
-      <ol class="postsList">
-          <li class="postsList-item">
-              <h2 class="post-titulo"><a href="/posts/5-perguntas">5 perguntas que você deve responder para ter um canal de vídeos online de sucesso.</a></h2>
-              <p class="post-conteudo">Você tem um negócio, é produtor de conteúdo, ou quer se tornar um grande influenciador usando mídias sociais? Um canal de vídeo online é uma ótima plataforma para você ampliar o seu alcance e aumentar as suas vendas, isso você já deve saber. Só tem um problema: você não faz ideia de como começar.
+    <section style="padding:60px 0;">
+        <div class="container">
+            <div class="row">
+            	<div class="col-md-9 pull-left">
+                 <div class="row">
+                <div class="col-md-3">
+                	<img class="img-responsive" src="img/perguntas.jpg">
+                </div>
+                <div class="col-md-9">
+                	<div class="postsList-item">
+              			<h2><a class="post-titulo" href="posts/5-perguntas">5 perguntas que você deve responder para ter um canal de vídeos online de sucesso</a></h2>
+              			<p class="post-conteudo">Você tem um negócio, é produtor de conteúdo, ou quer se tornar um grande influenciador usando mídias sociais? Um canal de vídeo online é uma ótima plataforma para você ampliar o seu alcance e aumentar as suas vendas, isso você já deve saber... <a href="posts/5-perguntas"> Leia mais >></a>
+              			</p>
+          			</div>
+                </div>
+              </div>
+              
+              <hr>
+              
+              <div class="row">
+                <div class="col-md-3">
+                	<img class="img-responsive" src="img/vloger.jpg">
+                </div>
+                <div class="col-md-9">
+                	<div class="postsList-item">
+              			<h2><a class="post-titulo" href="posts/quiz-vlogger">Quiz: Qual tipo de Vlogger você é?</a></h2>
+              			<p class="post-conteudo">Descubra a sua vocação para começar com um vlog arrasador... <a href="posts/quiz-vlogger"> Leia mais >></a>
+              			</p>
+          			</div>
+                </div>
+              </div>
+              
+              <hr>
+              
+              <div class="row">
+                <div class="col-md-3">
+                	<img class="img-responsive" src="img/streaming.jpg">
+                </div>
+                <div class="col-md-9">
+                	<div class="postsList-item">
+              			<h2><a class="post-titulo" href="posts/engajar-streaming">Como engajar sua audiência com vídeo live streaming</a></h2>
+              			<p class="post-conteudo">Um dos maiores desafios para qualquer organização é manter seus consumidores interessados nos diferentes conteúdos produzidos. Se sua empresa vende produtos e/ou serviços, ou ainda é uma ONG sem fins lucrativos... <a href="posts/engajar-streaming"> Leia mais >></a>
+              			</p>
+          			</div>
+                </div>
+              </div>
+              
+              <hr>
+              
+              <div class="row">
+                <div class="col-md-3">
+                	<img class="img-responsive" src="img/video.jpg">
+                </div>
+                <div class="col-md-9">
+                	<div class="postsList-item">
+              			<h2><a class="post-titulo" href="posts/video-amador">4 dicas para tornar os seus vídeos amadores em profissionais</a></h2>
+              			<p class="post-conteudo">Você está começando um canal de vídeos para internet. Sabemos que a primeira das dúvidas é: por onde começar? Nos dias de hoje temos uma grande quantidade de conteúdo disponível na web e, para você conseguir ter destaque... <a href="posts/video-amador"> Leia mais >></a>
+              			</p>
+          			</div>
+                </div>
+                </div>
+                
+                <hr>
+                
+            </div>
+                
+            <div class="col-md-3 pull-right mt-artigo">
+              	<div style="background:#eee; height:auto; width:100%; padding:15px; border:1px solid #ddd; border-radius:5px;">
+                <h4 class="text-center">Artigos populares</h4>
+                <hr>
+                	<ul style="padding:20px 0px 0px 20px;">
+<li><a href="posts/5-perguntas" title="5 perguntas que você deve responder para ter um canal de vídeos online de sucesso" class="wpp-post-title" target="_self">5 perguntas que você deve responder para ter um canal de vídeos online de sucesso</a> </li>
+<li><a href="posts/engajar-streaming" title="Como engajar sua audiência com vídeo live streaming" class="wpp-post-title" target="_self">Como engajar sua audiência com vídeo live streaming</a> </li>
+<li><a href="posts/video-amador" title="4 dicas para tornar os seus vídeos amadores em profissionais" class="wpp-post-title" target="_self">4 dicas para tornar os seus vídeos amadores em profissionais</a> </li>
+<li><a href="posts/quiz-vlogger" title="Quiz: Qual tipo de Vlogger você é?" class="wpp-post-title" target="_self">Quiz: Qual tipo de Vlogger você é?</a> </li>
 
-Se você quer entender como criar um canal de vídeo de sucesso, continue lendo que temos a resposta certa para você....
-              </p>
-          </li>
-
-          <br>
-          <br>
-
-          <li class="postsList-item">
-              <h2 class="post-titulo"><a href="/posts/quiz-vlogger">Quiz: Qual tipo de Vlogger você é?</a></h2>
-              <p>
-                  Descubra a sua vocação para começar com um vlog arrasador....
-              </p>
-          </li>
-
-          <br>
-          <br>
-
-          <li class="postsList-item">
-              <h2 class="post-titulo"><a href="/posts/engajar-streaming">Como engajar sua audiência com vídeo live streaming.</a></h2>
-              <p>
-                Um dos maiores desafios para qualquer organização é manter seus consumidores interessados nos diferentes conteúdos produzidos. Se sua empresa vende produtos e/ou serviços, ou ainda é uma ONG sem fins lucrativos, ter audiência é extremamente importante e rentável, afinal isso mostra o quão as pessoas gostam da sua marca e se sua empresa está no caminho certo.
-
-Assim, o foco aqui é engajar seus cliente, já que sem pessoas e sem audiência, você não chegará em lugar nenhum e acredite se quiser, o live video entrega exatamente o que buscamos....
-              </p>
-          </li>
-
-          <br>
-          <br>
-
-          <li class="postsList-item">
-              <h2 class="post-titulo"><a href="/posts/video-amador">4 dicas para tornar os seus vídeos amadores em profissionais.</a></h2>
-              <p>
-                Você está começando um canal de vídeos para internet. Sabemos que a primeira das dúvidas é: por onde começar? Nos dias de hoje temos uma grande quantidade de conteúdo disponível na web e, para você conseguir ter destaque e relevância, é preciso oferecer materiais ricos, únicos e que mostrem preocupação com a qualidade técnica de vídeo.
-
-                Se você busca ter um negócio usando vídeos, com conteúdo interessante, alcance junto a sua audiência e até ganhar dinheiro com isso, temos quatro dicas que podem ajudar você deixas de ser amador e se tornar um profissional....
-
-              </p>
-          </li>
-
-      </ol>
-      <!-- <nav class="sidePosts">
-        <ol>
-        <li>
-          <a href="#">
-              Post bacanudo 1
-          </a>
-        </li>
-        <li>
-          <a href="#">
-              Post bacanudo 2
-          </a>
-        </li>
-      </ol>
-      </nav> -->
-    </div>
-    </main>
-
+</ul>
+                </div>
+            </div>
+              
+            </div>   
+        </div>
+    </section>
+   
+   <!-- Footer -->
+    <footer>
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-6 text-left-2">
+                        <img src="img/footer-logo-me-influencer.jpg">
+                    </div>
+                    <div class="footer-col col-md-6 text-right-2">
+                    	<a style="margin-right:10px;" href="#"><img src="img/facebook.png"></a>
+                        <a style="margin-right:10px;" href="#"><img src="img/instagram.png"></a>
+                        <a href="#"><img src="img/pinterest.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        Copyright &copy; 2017 - Todos os direitos reservados.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+   
     <script src="scripts/database.js"></script>
 
     <script>
@@ -162,6 +228,22 @@ Assim, o foco aqui é engajar seus cliente, já que sem pessoas e sem audiência
       ga('send', 'pageview');
 
     </script>
+    
+     <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/freelancer.min.js"></script>
 
 </body>
 </html>
